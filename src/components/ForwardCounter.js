@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import useCounter from '../hooks/created-hooks';
+import useCounter from '../hooks/created-hook';
 
 import Card from './Card';
 

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import useCounter from '../hooks/created-hook2';
+import useCounter from '../hooks/created-hook';
 
 import Card from './Card';
 
 const BackwardCounter = () => {
-   const counter = useCounter();
+  
+   const counter = useCounter(false);
 
   return <Card>{counter}</Card>;
 };
