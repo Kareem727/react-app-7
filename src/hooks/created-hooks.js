@@ -7,15 +7,15 @@ const useCounter = () =>{
   useEffect(() => {
    const interval = setInterval(() =>{
 setCounter((prevCounter) => prevCounter + 1);
-   });
+   }, 500);
 
     return () => clearInterval(interval);
     
   }, []);
 
   return (
-  <Card>{counter}</Card>
-  
+     counter
+
   );
   
 }
